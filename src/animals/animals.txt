@@ -1,0 +1,13 @@
+
+
+All animals have
+name
+species
+maxLife span
+canEat[]
+
+
+
+getName
+getSpecies
+getLifeSpan
