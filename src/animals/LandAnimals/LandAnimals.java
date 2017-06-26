@@ -8,13 +8,13 @@ import animals.Animal;
 
 public class LandAnimals implements Animal {
     private String name;
-    private int species;
+    private AnimalSpecies species;
     private int type;
     private int lifeSpan; //Should be defines by species
     private String[] canEat;
 
 
-    public LandAnimals(String name, int species, int type)
+    public LandAnimals(String name, AnimalSpecies species, int type)
     {
         this.name = name;
 
@@ -25,7 +25,7 @@ public class LandAnimals implements Animal {
     }
 
     @Override
-    public int getSpecies() {
+    public AnimalSpecies getSpecies() {
         return null;
     }
 
