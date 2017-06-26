@@ -6,7 +6,7 @@ package animals;
 public interface Animal {
 
     public String getName();
-    public int getSpecies();
+    public AnimalSpecies getSpecies();
     public int getLifeSpan();
     public String [] getCanEat();
     public int getType();
