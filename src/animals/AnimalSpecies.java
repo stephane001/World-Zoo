@@ -23,14 +23,9 @@ public class AnimalSpecies {
 
     }
 
-    private AnimalSpecies(AnimalNames name) throws SpeciesDoesNotExistException {
+    public AnimalSpecies(AnimalNames name) throws SpeciesDoesNotExistException {
         this.name = name;
-        populate(name);
-    }
-
-    public AnimalSpecies populate(AnimalNames species) throws SpeciesDoesNotExistException
-    {
-        if(!contains(species))
+                if(!contains(species)) // should be in defualt 
         {
             throw new SpeciesDoesNotExistException();
         }
@@ -44,6 +39,18 @@ public class AnimalSpecies {
             case LION:
             case WOLVE:
                 this.lifeSpan = 15;
+                break;
+            case BEAR:
+            case MONKEY:
+                this.lifeSpan = 30;
+                break;
+            case CHICKEN:
+            case LAMB:
+                this.lifeSpan = 45;
+                break;
+            case ELEPHANT:
+                this.lifeSpan = 60;
+                break;
         }
     }
 
